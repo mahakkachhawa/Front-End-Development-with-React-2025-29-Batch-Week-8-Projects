@@ -21,7 +21,7 @@
 
   <ItemGroup>
 
-    <ProjectReference Include="..\dotnetapp\dotnetapp.csproj" />
+    <ProjectReference Include="../dotnetapp/dotnetapp.csproj" />
 
   </ItemGroup>
 
