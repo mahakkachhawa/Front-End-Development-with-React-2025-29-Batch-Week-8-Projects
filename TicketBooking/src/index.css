@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #eef1f6;
+    color: #1f2a44;
+  }
+  
+  .page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .ticket-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(31, 42, 68, 0.12);
+    border-top: 6px solid #3b5bdb;
+  }
+  
+  .ticket-title {
+    margin: 0 0 24px;
+    font-size: 1.9rem;
+    font-weight: 700;
+    color: #1f2a44;
+  }
+  
+  .count-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 18px 12px;
+    margin-bottom: 26px;
+    background: #f4f6fd;
+    border: 2px dashed #b8c4f0;
+    border-radius: 12px;
+  }
+  
+  .ticket-label {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #4a5675;
+  }
+  
+  .ticket-count {
+    min-width: 56px;
+    font-size: 2.6rem;
+    font-weight: 800;
+    color: #3b5bdb;
+  }
+  
+  .button-row {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .btn {
+    flex: 1;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+  
+  .btn:active {
+    transform: scale(0.97);
+  }
+  
+  .btn:focus-visible {
+    outline: 3px solid #91a7ff;
+    outline-offset: 2px;
+  }
+  
+  .btn-primary {
+    background: #3b5bdb;
+    color: #ffffff;
+    border: 2px solid #3b5bdb;
+  }
+  
+  .btn-primary:hover {
+    background: #2f4ac0;
+    border-color: #2f4ac0;
+  }
+  
+  .btn-secondary {
+    background: #ffffff;
+    color: #3b5bdb;
+    border: 2px solid #3b5bdb;
+  }
+  
+  .btn-secondary:hover {
+    background: #eef2ff;
+  }
+  
+  @media (max-width: 480px) {
+    .ticket-card {
+      padding: 24px 18px;
+    }
+    .count-row {
+      flex-direction: column;
+      gap: 6px;
+    }
+  }
