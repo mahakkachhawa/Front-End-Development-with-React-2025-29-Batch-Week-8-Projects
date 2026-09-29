@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #fdf0f3;
+    color: #3a1f2b;
+  }
+  
+  .page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .post-card {
+    width: 100%;
+    max-width: 420px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 28px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(58, 31, 43, 0.12);
+    border-top: 6px solid #e64980;
+  }
+  
+  .post-title {
+    margin: 0 0 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .component-type {
+    display: inline-block;
+    margin: 0 0 20px;
+    padding: 4px 14px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #a61e4d;
+    background: #ffdeeb;
+    border-radius: 999px;
+  }
+  
+  .post-text {
+    margin: 0 0 22px;
+    padding: 14px 16px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #5c3a48;
+    background: #fff7f9;
+    border-left: 4px solid #faa2c1;
+    border-radius: 6px;
+  }
+  
+  .like-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  
+  .heart {
+    font-size: 1.8rem;
+    color: #ced4da;
+    transition: color 0.2s ease;
+  }
+  
+  .heart-active {
+    color: #e64980;
+  }
+  
+  .like-count {
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: #a61e4d;
+  }
+  
+  .like-suffix {
+    font-size: 1rem;
+    color: #7d5a68;
+  }
+  
+  .like-btn {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: #e64980;
+    background: #ffffff;
+    border: 2px solid #e64980;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  }
+  
+  .like-btn:hover {
+    background: #fff0f6;
+  }
+  
+  .like-btn:active {
+    transform: scale(0.97);
+  }
+  
+  .like-btn:focus-visible {
+    outline: 3px solid #faa2c1;
+    outline-offset: 2px;
+  }
+  
+  .like-btn-active {
+    color: #ffffff;
+    background: #e64980;
+  }
+  
+  .like-btn-active:hover {
+    background: #d6336c;
+  }
+  
+  .like-status {
+    margin: 18px 0 0;
+    font-size: 0.95rem;
+    color: #7d5a68;
+  }
+  
+  .status-liked {
+    font-weight: 600;
+    color: #a61e4d;
+  }
