@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #eaf6f4;
+    color: #12332e;
+  }
+  
+  .page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .counter-card {
+    width: 100%;
+    max-width: 480px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 28px;
+    box-shadow: 0 10px 30px rgba(18, 51, 46, 0.12);
+    border-top: 6px solid #0ca678;
+  }
+  
+  .counter-title {
+    margin: 0 0 20px;
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+  }
+  
+  .message-input {
+    width: 100%;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #12332e;
+    border: 2px solid #b2dfd3;
+    border-radius: 10px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+  
+  .message-input:focus {
+    border-color: #0ca678;
+  }
+  
+  .input-error,
+  .input-error:focus {
+    border-color: #e03131;
+  }
+  
+  .progress-track {
+    height: 8px;
+    margin-top: 12px;
+    background: #e3f3ef;
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    height: 100%;
+    background: #0ca678;
+    border-radius: 999px;
+    transition: width 0.15s ease;
+  }
+  
+  .progress-over {
+    background: #e03131;
+  }
+  
+  .char-count {
+    margin: 8px 0 0;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-align: right;
+    color: #2b6b5e;
+  }
+  
+  .count-over {
+    color: #e03131;
+  }
+  
+  .warning {
+    margin: 10px 0 0;
+    padding: 9px 14px;
+    font-size: 0.92rem;
+    font-weight: 600;
+    color: #c92a2a;
+    background: #fff0f0;
+    border-radius: 8px;
+  }
+  
+  .preview-box {
+    margin-top: 20px;
+    padding: 14px 16px;
+    background: #f5fbf9;
+    border: 1px dashed #9fd6c7;
+    border-radius: 10px;
+  }
+  
+  .preview-heading {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #4f8f80;
+  }
+  
+  .preview-text {
+    margin: 0;
+    min-height: 1.4em;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
+  
+  .preview-text:empty::before {
+    content: "Nothing typed yet";
+    color: #94b8ae;
+    font-style: italic;
+  }
+  
+  .clear-btn {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #0ca678;
+    border: 2px solid #0ca678;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+  
+  .clear-btn:hover {
+    background: #099268;
+    border-color: #099268;
+  }
+  
+  .clear-btn:active {
+    transform: scale(0.98);
+  }
+  
+  .clear-btn:focus-visible {
+    outline: 3px solid #96f2d7;
+    outline-offset: 2px;
+  }
