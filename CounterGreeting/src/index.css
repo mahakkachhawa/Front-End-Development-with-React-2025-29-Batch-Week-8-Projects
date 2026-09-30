@@ -1,0 +1,98 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #eef1f6;
+  color: #1f2937;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 16px;
+}
+
+.card {
+  width: 100%;
+  max-width: 420px;
+  background: #ffffff;
+  border-radius: 14px;
+  padding: 24px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+.card-title {
+  margin: 0 0 20px;
+  text-align: center;
+  font-size: 26px;
+  color: #111827;
+}
+
+.section { padding: 16px 0; border-top: 1px solid #e5e7eb; }
+.section:first-of-type { border-top: none; }
+
+.badge {
+  display: inline-block;
+  margin: 0 0 12px;
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 999px;
+}
+.badge-functional { background: #dbeafe; color: #1d4ed8; }
+.badge-class { background: #ede9fe; color: #6d28d9; }
+
+.stepper { display: flex; align-items: center; gap: 14px; margin-bottom: 12px; }
+.step-btn {
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 8px;
+  background: #2563eb;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+.step-btn:hover { background: #1d4ed8; }
+.count { min-width: 28px; text-align: center; font-size: 24px; font-weight: 700; }
+
+.link-btn {
+  padding: 0;
+  border: none;
+  background: none;
+  color: #2563eb;
+  font-size: 14px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.text-input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 9px 12px;
+  font-size: 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+}
+.text-input:focus { border-color: #2563eb; box-shadow: 0 0 0 2px #bfdbfe; }
+.input-error { border-color: #dc2626; }
+.input-error:focus { border-color: #dc2626; box-shadow: 0 0 0 2px #fecaca; }
+
+.save-btn {
+  padding: 9px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #7c3aed;
+  color: #fff;
+  font-size: 15px;
+  cursor: pointer;
+}
+.save-btn:hover { background: #6d28d9; }
+
+.message { margin: 12px 0 0; font-size: 14px; font-weight: 500; }
+.message-ok { color: #15803d; }
+.message-error { color: #dc2626; }
