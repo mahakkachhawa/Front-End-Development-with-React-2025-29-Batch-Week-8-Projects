@@ -1,0 +1,164 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+    background: #fff9db;
+    color: #2f2a12;
+  }
+  
+  .page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+  }
+  
+  .feedback-card {
+    width: 100%;
+    max-width: 440px;
+    background: #ffffff;
+    border-radius: 16px;
+    padding: 30px 28px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(47, 42, 18, 0.12);
+    border-top: 6px solid #fab005;
+  }
+  
+  .feedback-title {
+    margin: 0 0 22px;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+  
+  .rating-row {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+  
+  .rating-btn {
+    width: 50px;
+    height: 50px;
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #e67700;
+    background: #ffffff;
+    border: 2px solid #fab005;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.15s ease, color 0.15s ease, transform 0.1s ease;
+  }
+  
+  .rating-btn:hover {
+    background: #fff3bf;
+  }
+  
+  .rating-btn:active {
+    transform: scale(0.94);
+  }
+  
+  .rating-btn-active,
+  .rating-btn-active:hover {
+    color: #ffffff;
+    background: #f59f00;
+    border-color: #f59f00;
+  }
+  
+  .selected-rating {
+    margin: 16px 0 0;
+    font-size: 0.98rem;
+    font-weight: 600;
+    color: #7a6a1e;
+  }
+  
+  .rating-message {
+    margin: 12px 0 0;
+    padding: 9px 14px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #8a5a00;
+    background: #fff4d6;
+    border-radius: 8px;
+  }
+  
+  .feedback-input {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 1rem;
+    color: #2f2a12;
+    border: 2px solid #ffe066;
+    border-radius: 10px;
+    resize: vertical;
+    outline: none;
+    transition: border-color 0.15s ease;
+  }
+  
+  .feedback-input:focus {
+    border-color: #f59f00;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    margin-top: 18px;
+    padding: 12px 16px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #ffffff;
+    background: #f59f00;
+    border: 2px solid #f59f00;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.15s ease, transform 0.1s ease;
+  }
+  
+  .submit-btn:hover:not(:disabled) {
+    background: #e67700;
+    border-color: #e67700;
+  }
+  
+  .submit-btn:active:not(:disabled) {
+    transform: scale(0.98);
+  }
+  
+  .submit-btn:disabled {
+    color: #a89f7a;
+    background: #f1eddc;
+    border-color: #f1eddc;
+    cursor: not-allowed;
+  }
+  
+  button:focus-visible,
+  .feedback-input:focus-visible {
+    outline: 3px solid #ffd43b;
+    outline-offset: 2px;
+  }
+  
+  .thank-you {
+    padding: 22px 14px;
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #5c4a00;
+    background: #fff9db;
+    border: 2px dashed #ffd43b;
+    border-radius: 12px;
+  }
+  
+  .submitted-comment {
+    margin: 18px 0 0;
+    padding: 12px 14px;
+    font-size: 0.98rem;
+    line-height: 1.5;
+    text-align: left;
+    color: #5c5220;
+    background: #fffdf2;
+    border-left: 4px solid #ffd43b;
+    border-radius: 6px;
+    white-space: pre-wrap;
+    word-break: break-word;
+  }
